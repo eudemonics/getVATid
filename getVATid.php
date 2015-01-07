@@ -9,7 +9,8 @@ and modify the for loop to match that country's algorithm */
 ini_set('default_socket_timeout',10);
 
 /*set 9-digit string to start the search for UK */
-$vatIdinit = '000011123';
+/*i set it right before the first match i found, so you should be getting a match almost immediately. */
+$vatIdinit = '001010180';
 $count = 0;
 $match = 0;
 
@@ -72,7 +73,7 @@ if (isset($_GET["id"]) && ctype_digit($_GET["id"])) {
 
 else {
         for ($i=0; $i<999999999; $i++) {
-                $vatId = str_pad(++$vatIdinit, 11, 0, STR_PAD_LEFT);
+                $vatId = str_pad(++$vatIdinit, 9, 0, STR_PAD_LEFT);
                 ++$count;
 
                 /* Set parameters for the request */
