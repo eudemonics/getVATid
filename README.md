@@ -17,7 +17,8 @@ accompany all official download releases of this program.
 
 VAT number formats for each specific EU country can be found below.
 
-SOURCE: http://www.pixelgenius.com/vat-id.html
+SOURCE:
+>>>http://www.pixelgenius.com/vat-id.html
 
 Just change countryCode value to the country of your choice, and modify the for loop to match that country's algorithm.
 
@@ -29,7 +30,7 @@ you can also set the $count and $match variables with the amount of queries exec
 
 >>>$vatIdinit = '012345678';
 
->>>$count = 0;\n
+>>>$count = 0;
 >>>$match = 0;
 
 TABLE OF EUROPEAN VAT ID FORMATS BY COUNTRY
@@ -81,7 +82,7 @@ UNITED KINGDOM (GB)       9 characters                     	123456789
 
 FIND UK COMPANY NUMBER HERE:
 
-http://wck2.companieshouse.gov.uk//wcframe?name=accessCompanyInfo
+>>>http://wck2.companieshouse.gov.uk//wcframe?name=accessCompanyInfo
 
 **SEE COMMENTS IN PHP SCRIPT FILE FOR MORE INFORMATION**
 
