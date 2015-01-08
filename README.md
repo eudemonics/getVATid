@@ -1,9 +1,13 @@
 *PHP SCRIPT: getVATid v1.0*
+
 *AUTHOR: vvn [vvn @ notworth.it]*
+
 *INITIAL RELEASE DATE: January 22, 2014*
+
 *DESCRIPTION: Finds and generates a list of valid VAT ID's for the country of your choice using brute-force auto-incrementing queries against the exposed public web services WSDL.*
 
 *USER LICENSE AGREEMENT & DISCLAIMER*
+
 copyright, copyleft (C) 2014  vvn [vvn @ notworth.it]
 
 This program is FREE software: you can use it, redistribute it and/or modify it as you wish. Copying and distribution of this file, with or without modification, are permitted in any medium without royalty provided the copyright notice and this notice are preserved. This program is offered AS-IS, WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -23,16 +27,16 @@ you can set the initial string to start the loop at by assigning it to `'$vatIdi
 
 you can also set the $count and $match variables with the amount of queries executed against the API ($count) and the number of matches in response ($match) so that the results file remains consistent.
 
-$vatIdinit = '012345678';
+>>>$vatIdinit = '012345678';
 
-$count = 0;
-$match = 0;
+>>>$count = 0;\n
+>>>$match = 0;
 
-=======================================================================================
 TABLE OF EUROPEAN VAT ID FORMATS BY COUNTRY
 
-EU COUNTRY (CODE)    FORMAT TO USE 	                          EXAMPLE
-=======================================================================================
+EU COUNTRY (CODE)         FORMAT TO USE 	                          EXAMPLE
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 AUSTRIA (AT)              9 characters, first always a U 	U12345678
 --------------------------------------------------------------------------------------
 BELGIUM (BE)              9 characters 	                          123456789
@@ -72,13 +76,15 @@ SPAIN (ES)        	3 formats, all 9 characters:
 SWEDEN (SE)               10 characters                                       1234567890
 --------------------------------------------------------------------------------------
 UNITED KINGDOM (GB)       9 characters                     	123456789
-======================================================================================
-======================================================================================
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 FIND UK COMPANY NUMBER HERE:
+
 http://wck2.companieshouse.gov.uk//wcframe?name=accessCompanyInfo
 
 **SEE COMMENTS IN PHP SCRIPT FILE FOR MORE INFORMATION**
+
 ========
 getVATid
 ========
