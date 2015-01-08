@@ -28,10 +28,11 @@ you can set the initial string to start the loop at by assigning it to `'$vatIdi
 
 you can also set the $count and $match variables with the amount of queries executed against the API ($count) and the number of matches in response ($match) so that the results file remains consistent.
 
->>>$vatIdinit = '012345678';
-
->>>$count = 0;
->>>$match = 0;
+>>$vatIdinit = '012345678';
+>>
+>>$count = 0;
+>>
+>>$match = 0;
 
 
 *TABLE OF EUROPEAN VAT ID FORMATS BY COUNTRY*
@@ -82,7 +83,7 @@ UNITED KINGDOM (GB)       9 characters                          	123456789
 
 FIND UK COMPANY NUMBER HERE:
 
->>>http://wck2.companieshouse.gov.uk//wcframe?name=accessCompanyInfo
+>>http://wck2.companieshouse.gov.uk/wcframe?name=accessCompanyInfo
 
 **SEE COMMENTS IN PHP SCRIPT FILE FOR MORE INFORMATION**
 
