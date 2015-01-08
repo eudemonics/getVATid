@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 *PHP SCRIPT: getVATid v1.0*
 *AUTHOR: vvn [vvn @ notworth.it]*
 *INITIAL RELEASE DATE: January 22, 2014*
 *DESCRIPTION: Finds and generates a list of valid VAT ID's for the country of your choice using brute-force auto-incrementing queries against the exposed public web services WSDL.*
 
-##### USER LICENSE AGREEMENT & DISCLAIMER
+*USER LICENSE AGREEMENT & DISCLAIMER*
 ##### copyright, copyleft (C) 2014  vvn [vvn @ notworth.it]
 #####
 ##### This program is FREE software: you can use it, redistribute it and/or modify
@@ -36,51 +35,51 @@ $count = 0;
 $match = 0;
 
 ---------------------------------------------------------------------
-#****** * ***TABLE OF EUROPEAN VAT ID FORMATS BY COUNTRY * *********#
+************TABLE OF EUROPEAN VAT ID FORMATS BY COUNTRY**************
 
 EU COUNTRY (CODE)    FORMAT TO USE 	                     EXAMPLE
 ====================================================================
 ====================================================================
 
-AUSTRIA (AT) 	      9 characters, first is always a U 	U12345678
+AUSTRIA (AT) 	      9 characters, first always a U 	 U12345678
 --------------------------------------------------------------------
-BELGIUM (BE)   	   9 characters 	                     123456789
+BELGIUM (BE)   	      9 characters 	                     123456789
 DENMARK-------------------------------------------------------------
 Denmark (DK) 	      8 characters 	                     12345678
 --------------------------------------------------------------------
 Finland (FI) 	      8 characters 	                     123456788
 --------------------------------------------------------------------
 France (FR)  	      4 formats, all 11 characters:
-                     * All digits *                      12345678901
-                     * First character is alpha *        X1123456789
-                     * Second character is alpha *       1X123456789
-                     * 1st & 2nd characters are alpha *  XX123456789
+                          - All digits                       12345678901
+                          - First character is alpha         X1123456789
+                          - Second character is alpha        1X123456789
+                          - 1st & 2nd characters alpha       XX123456789
 --------------------------------------------------------------------
-Germany (DE)   	   9 characters 	                     123456789
+Germany (DE)   	      9 characters 	                     123456789
 --------------------------------------------------------------------
-Greece (EL)    	   9 characters                      	123456789
+Greece (EL)    	      9 characters                     	 123456789
 --------------------------------------------------------------------
 Ireland (IE) 	      2 formats, both 8 characters:
-                     * Last character is alpha           1234567X
-                     * 2nd & last characters are alpha 	1X34567X
+                          - Last character is alpha          1234567X
+                          - 2nd & last characters alpha 	 1X34567X
 --------------------------------------------------------------------
-Italy (IT) 	         11 characters 	                     12345678901
+Italy (IT) 	     11 characters 	                     12345678901
 --------------------------------------------------------------------
-Luxembourg (LU) 	   8 characters 	                     12345678
-                	   12 characters, the 3-digit suffix
+Luxembourg (LU) 	     8 characters 	                     12345678
+                	     12 characters, the 3-digit suffix
 --------------------------------------------------------------------
-Netherlands (NL)     will always be in the format B01    123456789B01
+Netherlands (NL)         always be in the format B01         123456789B01
 --------------------------------------------------------------------
-Portugal (PT) 	      9 characters 	                     123456789
+Portugal (PT) 	     9 characters 	                     123456789
 --------------------------------------------------------------------
-Spain (ES)        	3 formats, all 9 characters:
-                     * 1st character is alpha            X12345678
-                     * Last character is alpha           12345678X
-                     * 1st & last characters are alpha 	X1234567X
+Spain (ES)        	     3 formats, all 9 characters:
+                         - 1st character is alpha            X12345678
+                         - Last character is alpha           12345678X
+                         - 1st & last characters alpha 	 X1234567X
 --------------------------------------------------------------------
-Sweden (SE) 	      10 characters 	                     1234567890
+Sweden (SE) 	     10 characters 	                     1234567890
 --------------------------------------------------------------------
-United Kingdom (GB)  9 characters                     	123456789
+United Kingdom (GB)      9 characters                     	 123456789
 ====================================================================
 ====================================================================
 
